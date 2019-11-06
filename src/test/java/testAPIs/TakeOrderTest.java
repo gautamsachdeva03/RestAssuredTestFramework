@@ -39,7 +39,7 @@ public class TakeOrderTest {
 		res = PO.putOrder(id,"take");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 200);
-		assertEquals(res.then().extract().path("status"),"ONGOING");
+		assertEquals(res.then().extract().path("status"), PO.prop.getProperty("status_ongoing"));
 	}
 	
 	/*
@@ -51,7 +51,7 @@ public class TakeOrderTest {
 		res = PO.putOrder(id,"take");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 422);
-		assertEquals(res.then().extract().path("message"),"Order status is not ASSIGNING");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_422_statusNotOnAssigning"));
 	}
 	
 	/*
@@ -63,7 +63,7 @@ public class TakeOrderTest {
 		res = PO.putOrder(99999,"take");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 404);
-		assertEquals(res.then().extract().path("message"),"ORDER_NOT_FOUND");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_404_orderNotFound"));
 	}	
 
 }

@@ -41,7 +41,7 @@ public class PlaceOrderTest {
 		res = PO.postOrder(payload);
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 400);
-		assertEquals(res.then().extract().path("message"),"error in field(s): stops");		
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_400_errorInStopsField"));		
 	}
 	
 	/*	
@@ -62,7 +62,7 @@ public class PlaceOrderTest {
 		res = PO.getOrder(x);
 		
 		//Status verification
-		assertEquals(res.then().extract().path("status"),"ASSIGNING");
+		assertEquals(res.then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 		
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -73,7 +73,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -103,7 +103,7 @@ public class PlaceOrderTest {
 		assertEquals(res.getStatusCode(), 201); 
 		
 		int x = res.then().extract().path("id");
-		assertEquals(PO.getOrder(x).then().extract().path("status"),"ASSIGNING");
+		assertEquals(PO.getOrder(x).then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 				
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -114,7 +114,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -145,7 +145,7 @@ public class PlaceOrderTest {
 		assertEquals(res.getStatusCode(), 201); 
 		
 		int x = res.then().extract().path("id");
-		assertEquals(PO.getOrder(x).then().extract().path("status"),"ASSIGNING");
+		assertEquals(PO.getOrder(x).then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 		
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -156,7 +156,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -185,7 +185,7 @@ public class PlaceOrderTest {
 		assertEquals(res.getStatusCode(), 201);
 		
 		int x = res.then().extract().path("id");
-		assertEquals(PO.getOrder(x).then().extract().path("status"),"ASSIGNING");
+		assertEquals(PO.getOrder(x).then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 		
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -196,7 +196,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -226,7 +226,7 @@ public class PlaceOrderTest {
 		assertEquals(res.getStatusCode(), 201);
 		
 		int x = res.then().extract().path("id");
-		assertEquals(PO.getOrder(x).then().extract().path("status"),"ASSIGNING");
+		assertEquals(PO.getOrder(x).then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 		
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -237,7 +237,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -267,7 +267,7 @@ public class PlaceOrderTest {
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 201);
 		int x = res.then().extract().path("id");
-		assertEquals(PO.getOrder(x).then().extract().path("status"),"ASSIGNING");
+		assertEquals(PO.getOrder(x).then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 		
 		//Distance according to stops 
 		int numberOfStops = payload.getStops().size();
@@ -278,7 +278,7 @@ public class PlaceOrderTest {
 		assertEquals(distance.size(), numberOfStops-1);
 		
 		//Currency should be HKD
-		assertEquals(res.then().extract().path("fare.currency"), "HKD");
+		assertEquals(res.then().extract().path("fare.currency"), PO.prop.getProperty("currencyUnit"));
 		
 		//Calculate fare
 		float expectedFare = PO.calculateFare(distance);
@@ -293,7 +293,7 @@ public class PlaceOrderTest {
 	}
 
 	/*	
-	 * Posting a new order with past date
+	 * Posting a new order with past date (Negative scenario
 	 */	
 	@Test
 	public void postOrderWithPastDateTest() {
@@ -306,7 +306,24 @@ public class PlaceOrderTest {
 		res = PO.postOrder(payload);
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 400);
-		assertEquals(res.then().extract().path("message"),"field orderAt is behind the present time");	
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_400_pastOrder"));	
+	}
+	
+	/*	
+	 * Posting a new order with invalid lat lng details
+	 */	
+	@Test
+	public void postOrderWithInvalidLatLngTest() {
+		logger.info("*** Test Case: Post order test with invalid lat lng details ***");
+		payload = new Payload();
+		payload.addStops(1.2, 0);
+		payload.addStops(122.375384, 14.182446);
+		payload.addStops(0, 0.186962);
+		
+		res = PO.postOrder(payload);
+		res.prettyPrint();
+		assertEquals(res.getStatusCode(), 400);
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_400_errorInLatLngField"));	
 	}
 	
 }

@@ -39,7 +39,7 @@ public class GetOrderDetailsTest {
 		res = PO.getOrder(id);
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 200);
-		assertEquals(res.then().extract().path("status"), "ASSIGNING");
+		assertEquals(res.then().extract().path("status"), PO.prop.getProperty("status_assigning"));
 	}
 
 	/*
@@ -51,6 +51,6 @@ public class GetOrderDetailsTest {
 		res = PO.getOrder(9999);
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 404);
-		assertEquals(res.then().extract().path("message"), "ORDER_NOT_FOUND");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_404_orderNotFound"));
 	}
 }

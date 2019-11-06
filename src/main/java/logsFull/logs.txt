@@ -431,4 +431,345 @@
   2019-11-05 22:32:09 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
   2019-11-05 22:32:09 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
   2019-11-05 22:32:09 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:13:24 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:13:25 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:13:25 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:13:25 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:15:13 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:15:13 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:15:14 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:15:14 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:21:09 INFO  GetOrderDetailsTest:78 - *** Test case: Complete order test with invalid id ***
+  2019-11-06 11:21:09 INFO  GetOrderDetailsTest:38 - *** Test case: Complete order with status: Assigning ***
+  2019-11-06 11:21:09 INFO  GetOrderDetailsTest:54 - *** Test case: Complete order with valid order id and valid status ***
+  2019-11-06 11:21:09 INFO  GetOrderDetailsTest:66 - *** Test case: Complete order test with status: Completed ***
+  2019-11-06 11:21:50 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:21:50 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:21:50 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:21:51 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:22:48 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:22:48 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:22:48 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:22:48 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:25:47 INFO  GetOrderDetailsTest:31 - *** Test case: Get order details with a valid id ***
+  2019-11-06 11:25:49 INFO  GetOrderDetailsTest:38 - Get request sent for order ID: 497
+  2019-11-06 11:25:49 INFO  GetOrderDetailsTest:50 - *** Test case: Get order details with invalid id ***
+  2019-11-06 11:33:59 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:34:02 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:34:02 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:34:02 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:34:02 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:34:03 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:34:04 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:34:05 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:34:05 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:34:05 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:35:40 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 11:35:40 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:37:01 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 11:37:01 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:37:01 INFO  GetOrderDetailsTest:50 - *** Test case: Take order with status: ONGOING ***
+  2019-11-06 11:38:17 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 11:38:18 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:38:18 INFO  GetOrderDetailsTest:50 - *** Test case: Take order with status: ONGOING ***
+  2019-11-06 11:38:35 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:38:37 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:38:37 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:38:37 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:38:37 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:38:38 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:38:39 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:38:39 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:38:39 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:31 - *** Test case: Get order details with a valid id ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:38 - Get request sent for order ID: 513
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:50 - *** Test case: Get order details with invalid id ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:50 - *** Test case: Take order with status: ONGOING ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:38:39 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:38:40 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:38:40 INFO  GetOrderDetailsTest:78 - *** Test case: Complete order test with invalid id ***
+  2019-11-06 11:38:40 INFO  GetOrderDetailsTest:38 - *** Test case: Complete order with status: Assigning ***
+  2019-11-06 11:38:40 INFO  GetOrderDetailsTest:54 - *** Test case: Complete order with valid order id and valid status ***
+  2019-11-06 11:38:40 INFO  GetOrderDetailsTest:66 - *** Test case: Complete order test with status: Completed ***
+  2019-11-06 11:42:49 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:42:51 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:42:51 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:42:51 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:42:51 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:42:52 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:42:53 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:42:53 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:42:53 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:44:03 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:44:06 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:44:07 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:44:53 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:44:57 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:44:58 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:44:59 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:44:59 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:44:59 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:47:56 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:47:59 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:48:00 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:48:01 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:49:53 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:49:55 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:49:55 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:49:55 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:49:55 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:49:56 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:49:57 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:49:58 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:51:42 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:51:45 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:51:46 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:51:47 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:51:47 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:51:47 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:51:47 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:51:47 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:55:44 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 11:55:48 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 11:55:49 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 11:55:49 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 11:55:49 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 11:55:49 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 11:55:49 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with invalid lat lng details ***
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 11:55:50 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 11:55:51 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 11:55:51 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 11:55:51 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 11:55:51 INFO  GetOrderDetailsTest:31 - *** Test case: Get order details with a valid id ***
+  2019-11-06 11:55:51 INFO  GetOrderDetailsTest:38 - Get request sent for order ID: 562
+  2019-11-06 11:55:51 INFO  GetOrderDetailsTest:50 - *** Test case: Get order details with invalid id ***
+  2019-11-06 11:55:52 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 11:55:52 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 11:55:52 INFO  GetOrderDetailsTest:50 - *** Test case: Take order with status: ONGOING ***
+  2019-11-06 11:55:52 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 11:55:52 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 11:55:53 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 11:55:53 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 11:55:54 INFO  GetOrderDetailsTest:78 - *** Test case: Complete order test with invalid id ***
+  2019-11-06 11:55:54 INFO  GetOrderDetailsTest:38 - *** Test case: Complete order with status: Assigning ***
+  2019-11-06 11:55:54 INFO  GetOrderDetailsTest:54 - *** Test case: Complete order with valid order id and valid status ***
+  2019-11-06 11:55:54 INFO  GetOrderDetailsTest:66 - *** Test case: Complete order test with status: Completed ***
+  2019-11-06 12:09:27 INFO  PlaceOrderTest:136 - *** Test Case: Post order test with four stops ***
+  2019-11-06 12:09:30 INFO  PlaceOrderTest:153 - Number of stops: 4
+  2019-11-06 12:09:30 INFO  PlaceOrderTest:163 - Expected fare according to distance: 386.8
+  2019-11-06 12:09:30 INFO  PlaceOrderTest:167 - Actual fare in response: 386.8
+  2019-11-06 12:09:30 INFO  PlaceOrderTest:260 - *** Test Case: Post order test with same date but wih late hours ***
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:275 - Number of stops: 3
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:285 - Expected fare according to distance: 496.24
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:289 - Actual fare in response: 496.24
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:218 - *** Test Case: Post order test with future date wih late hours ***
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:234 - Number of stops: 3
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:244 - Expected fare according to distance: 496.24
+  2019-11-06 12:09:31 INFO  PlaceOrderTest:248 - Actual fare in response: 496.24
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:178 - *** Test Case: Post order test with future date but wihout late hours ***
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:193 - Number of stops: 2
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:203 - Expected fare according to distance: 235.0
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:207 - Actual fare in response: 235.0
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:317 - *** Test Case: Post order test with invalid lat lng details ***
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:38 - *** Test Case: Post order test with one stop should show an error ***
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:300 - *** Test Case: Post order test with past date ***
+  2019-11-06 12:09:32 INFO  PlaceOrderTest:95 - *** Test Case: Post order test with three stops ***
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:111 - Number of stops: 3
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:121 - Expected fare according to distance: 311.4
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:125 - Actual fare in response: 311.4
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:52 - *** Test Case: Post order test with two stops ***
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:70 - Number of stops: 2
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:80 - Expected fare according to distance: 315.15
+  2019-11-06 12:09:33 INFO  PlaceOrderTest:84 - Actual fare in response: 315.15
+  2019-11-06 12:09:33 INFO  GetOrderDetailsTest:31 - *** Test case: Get order details with a valid id ***
+  2019-11-06 12:09:34 INFO  GetOrderDetailsTest:38 - Get request sent for order ID: 575
+  2019-11-06 12:09:34 INFO  GetOrderDetailsTest:50 - *** Test case: Get order details with invalid id ***
+  2019-11-06 12:09:34 INFO  GetOrderDetailsTest:62 - *** Test case: Take order with invalid order id ***
+  2019-11-06 12:09:34 INFO  GetOrderDetailsTest:38 - *** Test case: Take order with a valid id ***
+  2019-11-06 12:09:34 INFO  GetOrderDetailsTest:50 - *** Test case: Take order with status: ONGOING ***
+  2019-11-06 12:09:35 INFO  GetOrderDetailsTest:81 - *** Test case: Cancel order with invalid order id ***
+  2019-11-06 12:09:35 INFO  GetOrderDetailsTest:42 - *** Test case: Cancel order with status: Assigning ***
+  2019-11-06 12:09:35 INFO  GetOrderDetailsTest:67 - *** Test case: Cancel order with status: Completed ***
+  2019-11-06 12:09:36 INFO  GetOrderDetailsTest:54 - *** Test case: Cancel order with status: Ongoing ***
+  2019-11-06 12:09:36 INFO  GetOrderDetailsTest:78 - *** Test case: Complete order test with invalid id ***
+  2019-11-06 12:09:36 INFO  GetOrderDetailsTest:38 - *** Test case: Complete order with status: Assigning ***
+  2019-11-06 12:09:36 INFO  GetOrderDetailsTest:54 - *** Test case: Complete order with valid order id and valid status ***
+  2019-11-06 12:09:36 INFO  GetOrderDetailsTest:66 - *** Test case: Complete order test with status: Completed ***
   

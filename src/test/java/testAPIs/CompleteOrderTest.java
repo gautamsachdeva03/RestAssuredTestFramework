@@ -39,7 +39,7 @@ public class CompleteOrderTest {
 		res = PO.putOrder(id,"complete");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 422);
-		assertEquals(res.then().extract().path("message"),"Order status is not ONGOING");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_422_statusNotOnGoing"));
 		
 		//Change status to Ongoing for further tests
 		res = PO.putOrder(id, "take");
@@ -55,7 +55,7 @@ public class CompleteOrderTest {
 		res = PO.putOrder(id,"complete");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 200);
-		assertEquals(res.then().extract().path("status"), "COMPLETED");
+		assertEquals(res.then().extract().path("status"), PO.prop.getProperty("status_completed"));
 	}
 	
 	/*
@@ -67,7 +67,7 @@ public class CompleteOrderTest {
 		res = PO.putOrder(id,"complete");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 422);
-		assertEquals(res.then().extract().path("message"),"Order status is not ONGOING");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_422_statusNotOnGoing"));
 	}
 	
 	/*
@@ -79,7 +79,7 @@ public class CompleteOrderTest {
 		res = PO.putOrder(9999,"complete");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 404);
-		assertEquals(res.then().extract().path("message"),"ORDER_NOT_FOUND");
+		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_404_orderNotFound"));
 	}
 
 }
