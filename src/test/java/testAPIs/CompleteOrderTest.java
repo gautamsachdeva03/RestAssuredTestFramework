@@ -14,7 +14,7 @@ public class CompleteOrderTest {
 	
 	Utils PO;
 	Response res;
-	Payload payload;
+	Payload payload;	
 	int id;
 	final static Logger logger = Logger.getLogger(GetOrderDetailsTest.class);
 	
@@ -40,18 +40,18 @@ public class CompleteOrderTest {
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 422);
 		assertEquals(res.then().extract().path("message"), PO.prop.getProperty("error_422_statusNotOnGoing"));
-		
-		//Change status to Ongoing for further tests
-		res = PO.putOrder(id, "take");
-		assertEquals(res.getStatusCode(), 200);
 	}
 	
 	/*
 	 * Complete order test with valid order id
 	 */
-	@Test(dependsOnMethods="completeOrderWithoutTakingTest")
+	@Test(priority=2)
 	public void completeOrderValidIdTest() {
 		logger.info("*** Test case: Complete order with valid order id and valid status ***");
+		//Change status to Ongoing for further tests
+		res = PO.putOrder(id, "take");
+		assertEquals(res.getStatusCode(), 200);
+		
 		res = PO.putOrder(id,"complete");
 		res.prettyPrint();
 		assertEquals(res.getStatusCode(), 200);

@@ -2,12 +2,13 @@ package testAPIs;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.ZonedDateTime;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.Test;	
 
 import io.restassured.response.Response;
 import jsonData.Payload;
@@ -176,7 +177,7 @@ public class PlaceOrderTest {
 	@Test
 	public void postOrderWithFutureDateTwoStopsTest() {
 		logger.info("*** Test Case: Post order test with future date but wihout late hours ***");
-		payload = new Payload(PO.setOrderTime(2020, 20));
+		payload = new Payload(PO.setOrderTime(ZonedDateTime.now().getYear()+1, 20));
 		payload.addStops(22.344674, 114.124651);
 		payload.addStops(22.375384, 114.182446);
 		
@@ -216,7 +217,7 @@ public class PlaceOrderTest {
 	@Test
 	public void postOrderWithFutureDateThreeStopsTest() {
 		logger.info("*** Test Case: Post order test with future date wih late hours ***");
-		payload = new Payload(PO.setOrderTime(2024, 23));
+		payload = new Payload(PO.setOrderTime(ZonedDateTime.now().getYear()+1, 23));
 		payload.addStops(22.344674, 114.124651);
 		payload.addStops(22.375384, 114.182446);
 		payload.addStops(22.385669, 114.186962);
@@ -258,7 +259,7 @@ public class PlaceOrderTest {
 	@Test
 	public void postOrderWithFutureDateFourStopsTest() {
 		logger.info("*** Test Case: Post order test with same date but wih late hours ***");
-		payload = new Payload(PO.setOrderTime(2019, 23));
+		payload = new Payload(PO.setOrderTime(ZonedDateTime.now().getYear()+1, 23));
 		payload.addStops(22.344674, 114.124651);
 		payload.addStops(22.375384, 114.182446);
 		payload.addStops(22.385669, 114.186962);
@@ -298,7 +299,7 @@ public class PlaceOrderTest {
 	@Test
 	public void postOrderWithPastDateTest() {
 		logger.info("*** Test Case: Post order test with past date ***");
-		payload = new Payload(PO.setOrderTime(2018, 23));
+		payload = new Payload(PO.setOrderTime(ZonedDateTime.now().getYear()-1, 23));
 		payload.addStops(22.344674, 114.124651);
 		payload.addStops(22.375384, 114.182446);
 		payload.addStops(22.385669, 114.186962);
